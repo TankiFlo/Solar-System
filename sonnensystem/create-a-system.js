@@ -19,7 +19,8 @@ function setup(){//ADD Customization Options for each Planet
     for (var i = 0; i < planets.length; i++){
         optionsDiv.innerHTML += `
         <div id="${planets[i].name}">
-            <h2>${planets[i].name}</h2>
+            <br>
+            <input type="text" value="${planets[i].name}" onchange="planets[${i}].name = event.target.value; setup()" maxlength="8">
             <h3>Position</h3>
             <label for="${planets[i].name}-xSlider">x</label>
             <input type="range" min="0" max="100" value="50" id="${planets[i].name}-xSlider" class="PlanetPositionSlider" oninput="planets[${i}].posX = parseInt(event.target.value)">

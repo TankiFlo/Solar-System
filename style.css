@@ -32,3 +32,15 @@ h1 {
     color: white;
     text-align: center;
 }
+
+#options-parent input[type=text]{
+    color: white;
+    text-align: center;
+
+    font-size: large;
+
+    min-width: 10px;
+    max-width: 100px;
+    background-color: rgba(100, 100, 100, 0);
+    border: none;
+}
