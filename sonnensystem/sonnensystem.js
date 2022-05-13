@@ -18,6 +18,8 @@ for (var i = 0; i < maxStars; i++) {
     stars.push(new StellarBody(`Star${i}`, Math.random() * c.width, Math.random() * c.height, Math.random() * 2, new Color(255,255,255, Math.random() * 0.75)));
 }
 
+cssSetup()
+
 setup()
 
 var baseAngle = 0
@@ -55,3 +57,10 @@ function animate() {
     }
 }
 animate();
+
+function cssSetup(){
+    var optionsParent = document.getElementById("options-parent")
+    var optionsParentStyle = getComputedStyle(optionsParent)
+
+    optionsParent.style.maxHeight = c.height - parseInt(optionsParentStyle.borderRadius) + "px"
+}

@@ -14,7 +14,7 @@ function setup(){//ADD Customization Options for each Planet
     <input type="checkbox" id="OrbitCB" onchange="  drawOrbits = !drawOrbits;         
                                                     planets.forEach(body => {
                                                         body.orbitLine = [];
-                                                    });">`
+                                                    });" style="background-color: #000">`
 
     for (var i = 0; i < planets.length; i++){
         optionsDiv.innerHTML += `
