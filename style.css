@@ -65,6 +65,17 @@ h1 {
     border: none;
 }
 
+#options-parent input[type=button]{
+    font-size: 14pt;
+    color: white;
+
+    padding: 5px;
+
+    background-color: rgba(100, 100, 100, .5);
+    border: none;
+    border-radius: 50px;
+}
+
 #options-parent input[type=button]:hover{
     background-color: rgba(100, 100, 100, 1);
 }
