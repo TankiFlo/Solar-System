@@ -60,7 +60,7 @@ h1 {
     font-size: 17pt;
 
     min-width: 10px;
-    max-width: 150px;
+    max-width: 180px;
     background-color: rgba(100, 100, 100, 0);
     border: none;
 }
@@ -86,4 +86,9 @@ h1 {
 
 #options-parent input[type=checkmark]{
     width: 100px;
+}
+
+#options-parent select{
+    color: white;
+    background-color: rgba(100, 100, 100, .75);
 }

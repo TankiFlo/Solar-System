@@ -7,7 +7,6 @@ c.height = document.documentElement.clientHeight
 planets = new Array()
 planets.push(new StellarBody("Sun", c.width/2, 300, 50, new Color(255,255,0), 0))
 planets.push(new StellarBody("Earth", 100, 10, 20, new Color(0,255,0), 3))
-planets.push(new StellarBody("Örth", 10, 100, 20, new Color(0,0,255), 5))
 
 var starDensityModifier = 2
 
@@ -55,6 +54,10 @@ function animate() {
             body.orbit(planets[document.getElementsByClassName("PlanetOrbitSelect")[i].value], 100, baseAngle * body.speed)
         }
     }
+
+    updateColorLabel()
+
+    correctOrbitSelect()
 }
 animate();
 
